@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>calc</h2>
+
+      <div class="theme">
+        <div class="themeNo">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <div class="toggleField">
+          <div><p>Theme</p></div>
+
+          <div class="toggle-container" id="toggleContainer">
+            <button class="toggle-state" id="state1"></button>
+            <button class="toggle-state" id="state2"></button>
+            <button class="toggle-state" id="state3"></button>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="keypad">
+      <h1 class="keypadContent"></h1>
+    </section>
+
+    <main>
+      <div class="container">
+        <button class="key" onclick="appendToDisplay('7')">7</button>
+        <button class="key" onclick="appendToDisplay('8')">8</button>
+        <button class="key" onclick="appendToDisplay('9')">9</button>
+        <button class="key" id="delete">DEL</button>
+        <button class="key" onclick="appendToDisplay('4')">4</button>
+        <button class="key" onclick="appendToDisplay('5')">5</button>
+        <button class="key" onclick="appendToDisplay('6')">6</button>
+        <button class="key" onclick="appendToDisplay('+')">+</button>
+        <button class="key" onclick="appendToDisplay('1')">1</button>
+        <button class="key" onclick="appendToDisplay('2')">2</button>
+        <button class="key" onclick="appendToDisplay('3')">3</button>
+        <button class="key" onclick="appendToDisplay('-')">-</button>
+        <button class="key" onclick="appendToDisplay('.')">.</button>
+        <button class="key" onclick="appendToDisplay('0')">0</button>
+        <button class="key" onclick="appendToDisplay('/')">/</button>
+        <button class="key" onclick="appendToDisplay('*')">x</button>
+      </div>
+
+      <div class="wrapper">
+        <button id="reset">Reset</button>
+        <button id="equal">=</button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/hedisnice">HedisNice</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
